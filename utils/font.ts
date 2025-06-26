@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Lexend } from 'next/font/google'
+import { Lexend } from 'next/font/google'
 
 export const lexend = Lexend({
   weight: ['500'],

@@ -1,26 +1,26 @@
-'use client'
-import { lexend } from '@/utils/font'
-import clsx from 'clsx'
+'use client';
+import { lexend } from '@/utils/font';
+import clsx from 'clsx';
 
-import HomeIcon from '@/svgs/menu-home.svg'
-import HomeIconSelected from '@/svgs/menu-home_selected.svg'
+import HomeIcon from '@/svgs/menu-home.svg';
+import HomeIconSelected from '@/svgs/menu-home_selected.svg';
 
-import SearchIcon from '@/svgs/menu-search.svg'
-import SearchIconSelected from '@/svgs/menu-search_selected.svg'
+import SearchIcon from '@/svgs/menu-search.svg';
+import SearchIconSelected from '@/svgs/menu-search_selected.svg';
 
-import ReelsIcon from '@/svgs/menu-reels.svg'
-import ReelsIconSelected from '@/svgs/menu-reels_selected.svg'
+import ReelsIcon from '@/svgs/menu-reels.svg';
+import ReelsIconSelected from '@/svgs/menu-reels_selected.svg';
 
-import MessagerIcon from '@/svgs/menu-messager.svg'
-import MessagerIconSelected from '@/svgs/menu-messager_selected.svg'
+import MessagerIcon from '@/svgs/menu-messager.svg';
+import MessagerIconSelected from '@/svgs/menu-messager_selected.svg';
 
-import NotificationIcon from '@/svgs/menu-notification.svg'
-import NotificationIconSelected from '@/svgs/menu-notification_selected.svg'
+import NotificationIcon from '@/svgs/menu-notification.svg';
+import NotificationIconSelected from '@/svgs/menu-notification_selected.svg';
 
-import MoreIcon from '@/svgs/menu-more.svg'
-import MoreIconSelected from '@/svgs/menu-more_selected.svg'
+import MoreIcon from '@/svgs/menu-more.svg';
+import MoreIconSelected from '@/svgs/menu-more_selected.svg';
 
-import { useState } from 'react'
+import { useState } from 'react';
 
 export const MenuDesk = () => {
   enum EMenu {
@@ -31,11 +31,11 @@ export const MenuDesk = () => {
     NOTIFICATION,
     MORE,
   }
-  const [selectedSection, setSelectedSection] = useState(EMenu.HOME)
+  const [selectedSection, setSelectedSection] = useState(EMenu.HOME);
 
   const selectSection = (section: EMenu) => () => {
-    setSelectedSection(section)
-  }
+    setSelectedSection(section);
+  };
 
   return (
     <>
@@ -76,5 +76,5 @@ export const MenuDesk = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
