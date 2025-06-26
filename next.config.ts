@@ -1,7 +1,14 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   /* config options here */
+  images: {
+    domains: [
+      'instagram.fhan15-1.fna.fbcdn.net',
+      'instagram.fhan5-8.fna.fbcdn.net',
+      'instagram.fdel27-1.fna.fbcdn.net',
+    ],
+  },
   turbopack: {
     rules: {
       '*.svg': {
@@ -14,9 +21,9 @@ const nextConfig: NextConfig = {
     config.module.rules.push({
       test: /\.svg$/i,
       use: ['@svgr/webpack'],
-    });
-    return config;
+    })
+    return config
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig
