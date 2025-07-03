@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(quicksand.className, 'antialiased w-[800px] mx-auto *:font-[500]')}>
+      <body className={clsx(quicksand.className, 'antialiased w-[800px] mx-auto *:font-[500] *:text-[14px]')}>
         <MenuDesk />
         {children}
       </body>

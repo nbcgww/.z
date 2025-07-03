@@ -17,6 +17,7 @@ import Video from 'next-video'
 import { feedTray } from '@/fakeshit/feedTray'
 
 import { Pagination } from 'swiper/modules'
+import { useState } from 'react'
 
 interface ReactAreaProps {
   likeCount: number
@@ -57,24 +58,81 @@ export const ContentPost = ({ userName, content }: ContentPostProps) => {
   )
 }
 
+interface CommentAreaProps {
+  data: any[]
+}
+export const CommentArea = ({ data }: CommentAreaProps) => {
+  return (
+    <div className="w-full">
+      {data.map((i, idx) => (
+        <div>
+          <div className="flex gap-[10px] mb-[10px]">
+            <div className="w-[3px] bg-[#00c3ff] flex-none"></div>
+            <div>
+              <div className="flex items-center gap-[10px]">
+                <Avatar type={avatar_type.feed} src={i.user.avatar} />
+                <UserName name={i.user.name} />
+                <TimeAgo time={i.timeDate} />
+              </div>
+              <div>
+                <p className="text-[14px] line-clamp-5">{i.comment}</p>
+              </div>
+              <div className="flex gap-[10px]">
+                <div>like</div>
+                <div>reply</div>
+              </div>
+            </div>
+          </div>
+          {i.reply.map((j, idxj) => (
+            <div className="pl-[15px]">
+              <div className="w-full">
+                <div className="flex gap-[10px]">
+                  <div className="w-[3px] bg-[#26ff00] flex-none"></div>
+                  <div>
+                    <div className="flex items-center gap-[10px]">
+                      <Avatar type={avatar_type.feed} src={j.user.avatar} />
+                      <UserName name={j.user.name} />
+                      <TimeAgo time={j.timeDate} />
+                    </div>
+                    <div>
+                      <p className="text-[14px]">{j.comment}</p>
+                    </div>
+                    <div className="flex gap-[10px]">
+                      <div>like</div>
+                      <div>reply</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export const FeedTray = () => {
+  const handleReRenderSwiper = () => {
+    console.log(':sadfjsdklfjklsdfjkl')
+  }
   const imageOrVideo = (media: any) => {
     const { type, src } = media
 
     if (type === 'image') {
       return (
-        <div className="w-full h-[500px] bg-[#08e6ff] relative">
+        <div className="w-full h-[500px] relative">
           <Image src={src} className="" alt="" fill />
         </div>
       )
     }
     if (type === 'video') {
-      return <Video src={src} />
+      return <Video src={src} onLoadedData={handleReRenderSwiper} />
     }
   }
   return (
     <>
-      {feedTray.map(({ id, media, caption, user, timeDate, likeCount, commentCount }) => (
+      {feedTray.map(({ id, media, caption, user, timeDate, likeCount, commentCount, comments }) => (
         <div key={id} className="w-[400px] mx-auto">
           <div className="w-full pb-[15px] mb-[15px] border-b-[1px] border-[#838383]">
             {/* header */}
@@ -92,7 +150,6 @@ export const FeedTray = () => {
               <Swiper
                 spaceBetween={0}
                 slidesPerView={1}
-                autoHeight={true}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 modules={[Pagination]}
@@ -107,6 +164,8 @@ export const FeedTray = () => {
             </div>
             <ReactArea likeCount={likeCount} commentCount={commentCount} />
             <ContentPost userName={user.name} content={caption} />
+            <div className="h-[15px]"></div>
+            <CommentArea data={comments} />
           </div>
         </div>
       ))}

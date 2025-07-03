@@ -1,5 +1,63 @@
 export const feedTray = [
   {
+    id: 2,
+    user: {
+      name: '__________________',
+      avatar:
+        'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
+    },
+    timeDate: '2024',
+    media: [
+      {
+        id: 1,
+        type: 'video',
+        src: 'https://stream.mux.com/8PtWD02493UYuLAbr5FwtvSAgHRfdsXSFSE2chx8HOCs.m3u8',
+      },
+      {
+        id: 2,
+        type: 'video',
+        src: 'https://stream.mux.com/v4e7AWFMn5Dn7qXe900OG1mkTmvZig4vc1bzWfv012Ei00.m3u8',
+      },
+    ],
+    saved: false,
+    likeCount: 112,
+    commentCount: 1000,
+    caption: `You're all caught up
+You've seen all new posts from the past 3 days.`,
+    comments: [
+      {
+        user: {
+          name: 'cz',
+          avatar:
+            'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
+        },
+        timeDate: '2024',
+        likeCount: 1,
+        replyCount: 2,
+        comment: `Tổ chức Y tế Thế giới (WHO) vừa cảnh báo về xu hướng gia tăng các ca mắc COVID-19 liên quan biến thể mới NB.1.8.1. Biến thể này hiện đang được các nhà nghiên cứu giải mã trình tự gene. Dù xác nhận rằng biến thể mới không gây rủi ro lớn hơn đối với sức khỏe so với các biến thể trước đây, nhưng WHO lưu ý việc virus liên tục biến đổi có thể dẫn đến các đợt lây nhiễm mới.
+
+WHO cũng khẳng định xu hướng gia tăng các ca mắc COVID-19 hiện nay phù hợp với mô hình hoạt động theo mùa của virus.
+
+Nhu cầu nhập viện hoặc chăm sóc đặc biệt hiện không cao, nhờ khả năng miễn dịch cộng đồng và phạm vi tiêm chủng rộng rãi.
+
+Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "cao", đồng thời kêu gọi các quốc gia tăng cường giám sát sức khỏe, đưa COVID-19 vào các chiến lược phòng ngừa bệnh đường hô hấp theo mùa, ngăn chặn thông tin sai lệch và khuyến khích mọi người tuân thủ các biện pháp phòng ngừa.`,
+        reply: [
+          {
+            user: {
+              name: 'cz',
+              avatar:
+                'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
+            },
+            timeDate: '2024',
+            likeCount: 1,
+            replyCount: 2,
+            comment: `Alo`,
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: 1,
     user: {
       name: '____',
@@ -38,31 +96,31 @@ export const feedTray = [
     likeCount: 0,
     commentCount: 390842534590783240958732409857389475893475,
     caption: '反省ユミちゃん🥺 立ったまま反省してるのかわいすぎる♡',
-  },
-  {
-    id: 2,
-    user: {
-      name: '🐮',
-      avatar:
-        'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
-    },
-    timeDate: '2024',
-    media: [
+    comments: [
       {
-        id: 1,
-        type: 'video',
-        src: 'https://stream.mux.com/8PtWD02493UYuLAbr5FwtvSAgHRfdsXSFSE2chx8HOCs.m3u8',
-      },
-      {
-        id: 2,
-        type: 'video',
-        src: 'https://stream.mux.com/v4e7AWFMn5Dn7qXe900OG1mkTmvZig4vc1bzWfv012Ei00.m3u8',
+        user: {
+          name: 'cz',
+          avatar:
+            'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
+        },
+        timeDate: '2024',
+        likeCount: 1,
+        replyCount: 2,
+        comment: 'Reelahjaksdhfjkasdfhj',
+        reply: [
+          {
+            user: {
+              name: 'cz',
+              avatar:
+                'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
+            },
+            timeDate: '2024',
+            likeCount: 1,
+            replyCount: 2,
+            comment: `Alo`,
+          },
+        ],
       },
     ],
-    saved: false,
-    likeCount: 112,
-    commentCount: 1000,
-    caption: `You're all caught up
-You've seen all new posts from the past 3 days.`,
   },
 ]
