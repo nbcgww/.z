@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { MenuDesk } from '@/components/layout/MenuDesk'
 import clsx from 'clsx'
+import { raleway } from '@/utils/font'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -26,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(geistSans.variable, geistMono.variable, 'antialiased w-[800px] mx-auto')}>
+      <body className={clsx(raleway.className, 'antialiased w-[800px] mx-auto')}>
         <MenuDesk />
         {children}
       </body>

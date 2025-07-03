@@ -21,6 +21,7 @@ import MoreIcon from '@/svgs/menu-more.svg'
 import MoreIconSelected from '@/svgs/menu-more_selected.svg'
 
 import { useState } from 'react'
+import { Avatar } from '../Common/Avatar'
 
 export const MenuDesk = () => {
   enum EMenu {
@@ -30,6 +31,7 @@ export const MenuDesk = () => {
     MESSAGER,
     NOTIFICATION,
     MORE,
+    ACC,
   }
   const [selectedSection, setSelectedSection] = useState(EMenu.HOME)
 
@@ -69,6 +71,8 @@ export const MenuDesk = () => {
           <div onClick={selectSection(EMenu.NOTIFICATION)}>
             {selectedSection === EMenu.NOTIFICATION ? <NotificationIconSelected /> : <NotificationIcon />}
           </div>
+
+          <div onClick={selectSection(EMenu.ACC)}>{selectedSection === EMenu.ACC ? <Avatar /> : <Avatar />}</div>
         </div>
         <div onClick={selectSection(EMenu.MORE)} className="h-[40px]">
           {selectedSection === EMenu.MORE ? <MoreIconSelected /> : <MoreIcon />}
