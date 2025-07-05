@@ -34,13 +34,8 @@ You've seen all new posts from the past 3 days.`,
         timeDate: '2024',
         likeCount: 1,
         replyCount: 2,
-        comment: `Tổ chức Y tế Thế giới (WHO) vừa cảnh báo về xu hướng gia tăng các ca mắc COVID-19 liên quan biến thể mới NB.1.8.1. Biến thể này hiện đang được các nhà nghiên cứu giải mã trình tự gene. Dù xác nhận rằng biến thể mới không gây rủi ro lớn hơn đối với sức khỏe so với các biến thể trước đây, nhưng WHO lưu ý việc virus liên tục biến đổi có thể dẫn đến các đợt lây nhiễm mới.
-
-WHO cũng khẳng định xu hướng gia tăng các ca mắc COVID-19 hiện nay phù hợp với mô hình hoạt động theo mùa của virus.
-
-Nhu cầu nhập viện hoặc chăm sóc đặc biệt hiện không cao, nhờ khả năng miễn dịch cộng đồng và phạm vi tiêm chủng rộng rãi.
-
-Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "cao", đồng thời kêu gọi các quốc gia tăng cường giám sát sức khỏe, đưa COVID-19 vào các chiến lược phòng ngừa bệnh đường hô hấp theo mùa, ngăn chặn thông tin sai lệch và khuyến khích mọi người tuân thủ các biện pháp phòng ngừa.`,
+        comment: `The React Framework for the Web
+Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.`,
         reply: [
           {
             user: {
@@ -51,7 +46,22 @@ Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "ca
             timeDate: '2024',
             likeCount: 1,
             replyCount: 2,
-            comment: `Q6cZ2QGgI0jdLRVmwh_VoiItYZCE_gHSeAwDAwaoDmixEkxy3QqCohwgREgDjfSFJhZGRu0`,
+            comment: `Good to know:
+
+The viewport object and generateViewport function exports are only supported in Server Components.
+You cannot export both the viewport object and generateViewport function from the same route segment.
+If you're coming from migrating metadata exports, you can use metadata-to-viewport-export codemod to update your changes.`,
+          },
+          {
+            user: {
+              name: '🙂',
+              avatar:
+                'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
+            },
+            timeDate: '2024',
+            likeCount: 1,
+            replyCount: 2,
+            comment: `금고 이상의 형의 선고에 의하지 아니`,
           },
         ],
       },
@@ -93,8 +103,8 @@ Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "ca
       },
     ],
     saved: false,
-    likeCount: 0,
-    commentCount: 390842534590783240958732409857389475893475,
+    likeCount: 234,
+    commentCount: 1320954832,
     caption: '反省ユミちゃん🥺 立ったまま反省してるのかわいすぎる♡',
     comments: [
       {
@@ -106,7 +116,9 @@ Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "ca
         timeDate: '2024',
         likeCount: 1,
         replyCount: 2,
-        comment: 'Reelahjaksdhfjkasdfhj',
+        comment: `VueUse
+Collection of Vue Composition Utilities
+Collection of Essential Vue Composition Utilities`,
         reply: [
           {
             user: {
@@ -117,7 +129,29 @@ Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "ca
             timeDate: '2024',
             likeCount: 1,
             replyCount: 2,
-            comment: `Q6cZ2QGgI0jdLRVmwh_VoiItYZCE_gHSeAwDAwaoDmixEkxy3QqCohwgREgDjfSFJhZGRu0`,
+            comment: `<script setup lang="ts">
+import { useScroll } from '@vueuse/core'
+import { useTemplateRef } from 'vue'
+
+const el = useTemplateRef<HTMLElement>('el')
+const { x, y, isScrolling, arrivedState, directions } = useScroll(el)
+</script>
+
+<template>
+  <div ref="el" />
+</template>`,
+          },
+          {
+            user: {
+              name: '_',
+              avatar:
+                'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
+            },
+            timeDate: '2024',
+            likeCount: 1,
+            replyCount: 2,
+            comment: `แฟ็กซ์กู๋รูบิกฟีด โปรเจ็กต์ บลูเบอร์รีแซลมอนภควัมปติสป็อต คอร์สพรีเมียร์ คอลเล็กชั่นเดอะอีแต๋นถูกต้องคูลเลอร์ พาร์ทเนอร์บอมบ์มาราธอน เอนทรานซ์เลิฟหลวงปู่รีเสิร์ชปิยมิตร อิ่มแปร้จิ๊กซอว์ พันธกิจราชบัณฑิตยสถานบาลานซ์จูนหมิง สต๊อกเกรย์ อพาร์ทเมนท์คำตอบพ่อค้าโปรเจคท์ บึมเทคนู้ดจุ๊ย วอฟเฟิลพันธุวิศวกรรมแฟรี เฟรชชี่ติงต๊องอุตสาหการโฟมกรอบรูป ด็อกเตอร์วอฟเฟิลทีวี ซีรีส์ลามะ
+`,
           },
         ],
       },

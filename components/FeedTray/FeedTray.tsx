@@ -20,6 +20,10 @@ import { Pagination } from 'swiper/modules'
 import { useState } from 'react'
 import Instaplay from 'player.style/instaplay/react'
 
+import StarIcon from '@/svgs/feed-star.svg'
+import ReplyIcon from '@/svgs/feed-reply.svg'
+import { formatNumberCompact } from '@/utils/app'
+
 interface ReactAreaProps {
   likeCount: number
   commentCount: number
@@ -30,16 +34,32 @@ export const ReactArea = ({ likeCount, commentCount }: ReactAreaProps) => {
     <div className="px-[10px] sm:px-0">
       <div className="flex w-full justify-between py-[10px]">
         <div className="flex gap-[15px]">
-          <PostLike />
-          <PostComment />
-          <PostSend />
+          <div className="flex items-end gap-[8px]">
+            <button className="[&>svg]:h-[24px] [&>svg]:w-[24px]">
+              <StarIcon />
+            </button>
+            <p>{formatNumberCompact(likeCount)}</p>
+          </div>
+
+          <div className="flex items-end gap-[8px]">
+            <button>
+              <PostComment />
+            </button>
+            <p>{formatNumberCompact(commentCount)}</p>
+          </div>
+
+          <div className="flex items-end gap-[8px]">
+            <button>
+              <PostSend />
+            </button>
+            <p>{formatNumberCompact(247132)}</p>
+          </div>
         </div>
         <div>
-          <PostSave />
+          <button>
+            <PostSave />
+          </button>
         </div>
-      </div>
-      <div className="flex gap-[5px] [&>*]:text-[14px]">
-        <p className="text-[#f70404]">{likeCount} likes</p> | <p className="text-[#8e04f7]">{commentCount} comments</p>
       </div>
     </div>
   )
@@ -77,14 +97,25 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
               <div>
                 <p className="line-clamp-5 text-[14px]">{i.comment}</p>
               </div>
-              <div className="flex gap-[10px]">
-                <div>like</div>
-                <div>reply</div>
+              <div className="flex gap-[20px]">
+                <div className="flex gap-[8px]">
+                  <button className="[&>svg]:h-[18px] [&>svg]:w-[18px]" title="like">
+                    <StarIcon />
+                  </button>
+                  <p>{formatNumberCompact(113987127389)}</p>
+                </div>
+
+                <div className="flex gap-[8px]">
+                  <button className="[&>svg]:h-[18px] [&>svg]:w-[18px]" title="reply">
+                    <ReplyIcon />
+                  </button>
+                  <p>{formatNumberCompact(19031924)}</p>
+                </div>
               </div>
             </div>
           </div>
           {i.reply.map((j, idxj) => (
-            <div className="pl-[15px]" key={idxj}>
+            <div className="mb-[10px] pl-[15px]" key={idxj}>
               <div className="w-full">
                 <div className="flex gap-[8px]">
                   <div className="w-[3px] flex-none bg-[#26ff00]"></div>
@@ -97,9 +128,20 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
                     <div>
                       <p className="text-[14px]">{j.comment}</p>
                     </div>
-                    <div className="flex gap-[10px]">
-                      <div>like</div>
-                      <div>reply</div>
+                    <div className="flex gap-[20px]">
+                      <div className="flex gap-[8px]">
+                        <button className="[&>svg]:h-[18px] [&>svg]:w-[18px]" title="like">
+                          <StarIcon />
+                        </button>
+                        <p>{formatNumberCompact(113987127389)}</p>
+                      </div>
+
+                      <div className="flex gap-[8px]">
+                        <button className="[&>svg]:h-[18px] [&>svg]:w-[18px]" title="reply">
+                          <ReplyIcon />
+                        </button>
+                        <p>{formatNumberCompact(19031924)}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -113,15 +155,13 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
 }
 
 export const FeedTray = () => {
-  const handleReRenderSwiper = () => {
-    console.log(':sadfjsdklfjklsdfjkl')
-  }
+  const handleReRenderSwiper = () => {}
   const imageOrVideo = (media: any) => {
     const { type, src } = media
 
     if (type === 'image') {
       return (
-        <div className="relative h-[630px] w-full">
+        <div className="relative aspect-[2/3] w-full bg-[#000]">
           <Image src={src} alt="" fill className="h-full w-full object-contain" />
         </div>
       )
@@ -142,9 +182,9 @@ export const FeedTray = () => {
                 <UserName name={user.name} />
                 <TimeAgo time={timeDate} />
               </div>
-              <div className="">
+              <button className="">
                 <PostOption />
-              </div>
+              </button>
             </div>
             <ContentPost userName={user.name} content={caption} />
             <div className="w-full">

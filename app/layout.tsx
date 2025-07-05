@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={clsx(
           quicksand.className,
-          'mx-auto mt-[50px] w-full bg-[#ffffff] antialiased *:text-[14px] *:font-[500] sm:mt-0 sm:w-[800px]',
+          'mx-auto my-[80px] w-full bg-[#ffffff] antialiased *:text-[14px] *:font-[500] sm:mt-0 sm:w-[800px]',
         )}
       >
         <MenuDesk />

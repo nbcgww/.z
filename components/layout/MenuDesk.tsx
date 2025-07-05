@@ -60,7 +60,7 @@ export const MenuDesk = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 z-[99] flex h-[80px] w-full items-center justify-between border-b-[1px] border-b-[#b6b6b6ba] bg-[#fff] px-[20px] backdrop-blur-[5px] md:hidden">
+      <div className="fixed top-0 left-0 z-[99] flex h-[80px] w-full items-center justify-between border-b-[1px] border-b-[#b6b6b6ba] bg-[#fff] px-[20px] backdrop-blur-[5px] sm:hidden">
         <Logo />
         <div className="flex gap-[20px]">
           <div onClick={selectSection(EMenu.MESSAGER)}>
@@ -76,7 +76,7 @@ export const MenuDesk = () => {
           '!fixed bottom-0 left-0 z-[99] flex h-[80px] w-full items-center border-t-[1px] border-t-[#7b7b7b26] bg-[#fff] backdrop-blur-[5px] sm:top-0 sm:h-screen sm:w-[80px] sm:flex-col sm:justify-between sm:border-t-0 sm:border-r-[1px] sm:border-r-[#7b7b7b26]',
         )}
       >
-        <div className="hidden sm:block">
+        <div className="mt-[20px] hidden sm:block">
           <Logo />
         </div>
 
@@ -109,7 +109,7 @@ export const MenuDesk = () => {
             }
           </div>
         </div>
-        <div onClick={selectSection(EMenu.MORE)} className="hidden h-[40px] sm:block">
+        <div onClick={selectSection(EMenu.MORE)} className="mb-[20px] hidden h-[40px] sm:block">
           {selectedSection === EMenu.MORE ? <MoreIconSelected /> : <MoreIcon />}
         </div>
       </div>
