@@ -18,6 +18,7 @@ import { feedTray } from '@/fakeshit/feedTray'
 
 import { Pagination } from 'swiper/modules'
 import { useState } from 'react'
+import Instaplay from 'player.style/instaplay/react'
 
 interface ReactAreaProps {
   likeCount: number
@@ -51,9 +52,8 @@ interface ContentPostProps {
 
 export const ContentPost = ({ userName, content }: ContentPostProps) => {
   return (
-    <div className="">
-      <UserName name={userName} />
-      <span className="ml-[10px] text-[14px] font-[500]">{content}</span>
+    <div className="pb-[5px]">
+      <span className="text-[14px] font-[500]">{content}</span>
     </div>
   )
 }
@@ -66,7 +66,7 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
     <div className="w-full">
       {data.map((i, idx) => (
         <div>
-          <div className="flex gap-[10px] mb-[10px]">
+          <div className="flex gap-[8px] mb-[10px]">
             <div className="w-[3px] bg-[#00c3ff] flex-none"></div>
             <div>
               <div className="flex items-center gap-[10px]">
@@ -86,7 +86,7 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
           {i.reply.map((j, idxj) => (
             <div className="pl-[15px]">
               <div className="w-full">
-                <div className="flex gap-[10px]">
+                <div className="flex gap-[8px]">
                   <div className="w-[3px] bg-[#26ff00] flex-none"></div>
                   <div>
                     <div className="flex items-center gap-[10px]">
@@ -121,23 +121,23 @@ export const FeedTray = () => {
 
     if (type === 'image') {
       return (
-        <div className="w-full h-[500px] relative">
-          <Image src={src} className="" alt="" fill />
+        <div className="w-full h-[630px] relative ">
+          <Image src={src} alt="" fill className="object-contain w-full h-full" />
         </div>
       )
     }
     if (type === 'video') {
-      return <Video src={src} onLoadedData={handleReRenderSwiper} />
+      return <Video src={src} onLoadedData={handleReRenderSwiper} theme={Instaplay} />
     }
   }
   return (
     <>
       {feedTray.map(({ id, media, caption, user, timeDate, likeCount, commentCount, comments }) => (
-        <div key={id} className="w-[400px] mx-auto">
+        <div key={id} className="w-[500px] mx-auto">
           <div className="w-full pb-[15px] mb-[15px] border-b-[1px] border-[#838383]">
             {/* header */}
             <div className="flex justify-between h-[50px] items-center">
-              <div className="flex gap-[15px] items-center">
+              <div className="flex gap-[8px] items-center">
                 <Avatar type={avatar_type.feed} src={user.avatar} />
                 <UserName name={user.name} />
                 <TimeAgo time={timeDate} />
@@ -146,6 +146,7 @@ export const FeedTray = () => {
                 <PostOption />
               </div>
             </div>
+            <ContentPost userName={user.name} content={caption} />
             <div className="w-full">
               <Swiper
                 spaceBetween={0}
@@ -163,8 +164,6 @@ export const FeedTray = () => {
               </Swiper>
             </div>
             <ReactArea likeCount={likeCount} commentCount={commentCount} />
-            <ContentPost userName={user.name} content={caption} />
-            <div className="h-[15px]"></div>
             <CommentArea data={comments} />
           </div>
         </div>
