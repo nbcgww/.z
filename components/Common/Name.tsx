@@ -10,7 +10,7 @@ export const UserName = ({ name }: Props) => {
     <button>
       <span
         className={clsx(
-          'bg-[#000000] flex-none px-[10px] leading-[20px] py-[2px] text-[white] text-[14px] inline font-[500]',
+          'inline flex-none bg-[#000000] px-[10px] py-[2px] text-[14px] leading-[20px] font-[500] text-[white]',
           raleway.className,
         )}
       >

@@ -23,7 +23,7 @@ import MoreIcon from '@/svgs/menu-more.svg'
 import MoreIconSelected from '@/svgs/menu-more_selected.svg'
 
 import { useState } from 'react'
-import { Avatar } from '../Common/Avatar'
+import { Avatar, avatar_type } from '../Common/Avatar'
 
 const Logo = () => {
   return (
@@ -58,7 +58,7 @@ export const MenuDesk = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 z-[99] flex h-[60px] w-full items-center justify-between bg-[#ffffff62] px-[20px] backdrop-blur-[5px] md:hidden">
+      <div className="fixed top-0 left-0 z-[99] flex h-[80px] w-full items-center justify-between border-b-[1px] border-b-[#b6b6b6ba] bg-[#ffffff62] px-[20px] backdrop-blur-[5px] md:hidden">
         <Logo />
         <div className="flex gap-[20px]">
           <div onClick={selectSection(EMenu.MESSAGER)}>
@@ -71,14 +71,14 @@ export const MenuDesk = () => {
       </div>
       <div
         className={clsx(
-          '!fixed bottom-0 left-0 z-[99] flex w-full items-center border-t-[1px] border-t-[#7b7b7b26] bg-[#ffffff4f] py-[20px] backdrop-blur-[5px] sm:top-0 sm:h-screen sm:w-[80px] sm:flex-col sm:justify-between sm:border-t-0 sm:border-r-[1px] sm:border-r-[#7b7b7b26]',
+          '!fixed bottom-0 left-0 z-[99] flex h-[80px] w-full items-center border-t-[1px] border-t-[#7b7b7b26] bg-[#ffffff4f] backdrop-blur-[5px] sm:top-0 sm:h-screen sm:w-[80px] sm:flex-col sm:justify-between sm:border-t-0 sm:border-r-[1px] sm:border-r-[#7b7b7b26]',
         )}
       >
         <div className="hidden sm:block">
           <Logo />
         </div>
 
-        <div className="flex w-full justify-between gap-[50px] px-[20px] sm:w-auto sm:flex-col [&>div]:cursor-pointer">
+        <div className="flex w-full -translate-y-[12px] justify-between gap-[50px] px-[20px] sm:w-auto sm:translate-y-0 sm:flex-col [&>div]:cursor-pointer">
           <div onClick={selectSection(EMenu.HOME)}>
             {selectedSection === EMenu.HOME ? <HomeIconSelected /> : <HomeIcon />}
           </div>
@@ -98,7 +98,14 @@ export const MenuDesk = () => {
             {selectedSection === EMenu.NOTIFICATION ? <NotificationIconSelected /> : <NotificationIcon />}
           </div>
 
-          <div onClick={selectSection(EMenu.ACC)}>{selectedSection === EMenu.ACC ? <Avatar /> : <Avatar />}</div>
+          <div onClick={selectSection(EMenu.ACC)}>
+            {
+              <Avatar
+                type={avatar_type.menu}
+                src="https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b"
+              />
+            }
+          </div>
         </div>
         <div onClick={selectSection(EMenu.MORE)} className="hidden h-[40px] sm:block">
           {selectedSection === EMenu.MORE ? <MoreIconSelected /> : <MoreIcon />}

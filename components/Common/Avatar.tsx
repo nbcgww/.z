@@ -10,8 +10,8 @@ export const Avatar = ({ type, src }: Props) => {
   return (
     <>
       <div
-        className={clsx('w-[25px] h-[25px] rounded-full overflow-hidden', {
-          'w-[35px] h-[35px]': type === avatar_type.feed,
+        className={clsx('h-[25px] w-[25px] overflow-hidden rounded-full', {
+          'h-[35px] w-[35px]': type === avatar_type.feed,
         })}
       >
         <Image alt="" width={75} height={75} src={src} />
