@@ -27,7 +27,7 @@ interface ReactAreaProps {
 
 export const ReactArea = ({ likeCount, commentCount }: ReactAreaProps) => {
   return (
-    <div>
+    <div className="px-[10px] sm:px-0">
       <div className="flex w-full justify-between py-[10px]">
         <div className="flex gap-[15px]">
           <PostLike />
@@ -38,7 +38,7 @@ export const ReactArea = ({ likeCount, commentCount }: ReactAreaProps) => {
           <PostSave />
         </div>
       </div>
-      <div className="flex [&>*]:text-[14px] gap-[5px]">
+      <div className="flex gap-[5px] [&>*]:text-[14px]">
         <p className="text-[#f70404]">{likeCount} likes</p> | <p className="text-[#8e04f7]">{commentCount} comments</p>
       </div>
     </div>
@@ -52,7 +52,7 @@ interface ContentPostProps {
 
 export const ContentPost = ({ userName, content }: ContentPostProps) => {
   return (
-    <div className="pb-[5px]">
+    <div className="px-[10px] pb-[5px] sm:px-0">
       <span className="text-[14px] font-[500]">{content}</span>
     </div>
   )
@@ -63,11 +63,11 @@ interface CommentAreaProps {
 }
 export const CommentArea = ({ data }: CommentAreaProps) => {
   return (
-    <div className="w-full">
+    <div className="w-full px-[10px] sm:px-0">
       {data.map((i, idx) => (
         <div>
-          <div className="flex gap-[8px] mb-[10px]">
-            <div className="w-[3px] bg-[#00c3ff] flex-none"></div>
+          <div className="mb-[10px] flex gap-[8px]">
+            <div className="w-[3px] flex-none bg-[#00c3ff]"></div>
             <div>
               <div className="flex items-center gap-[10px]">
                 <Avatar type={avatar_type.feed} src={i.user.avatar} />
@@ -75,7 +75,7 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
                 <TimeAgo time={i.timeDate} />
               </div>
               <div>
-                <p className="text-[14px] line-clamp-5">{i.comment}</p>
+                <p className="line-clamp-5 text-[14px]">{i.comment}</p>
               </div>
               <div className="flex gap-[10px]">
                 <div>like</div>
@@ -87,7 +87,7 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
             <div className="pl-[15px]">
               <div className="w-full">
                 <div className="flex gap-[8px]">
-                  <div className="w-[3px] bg-[#26ff00] flex-none"></div>
+                  <div className="w-[3px] flex-none bg-[#26ff00]"></div>
                   <div>
                     <div className="flex items-center gap-[10px]">
                       <Avatar type={avatar_type.feed} src={j.user.avatar} />
@@ -121,8 +121,8 @@ export const FeedTray = () => {
 
     if (type === 'image') {
       return (
-        <div className="w-full h-[630px] relative ">
-          <Image src={src} alt="" fill className="object-contain w-full h-full" />
+        <div className="relative h-[630px] w-full">
+          <Image src={src} alt="" fill className="h-full w-full object-contain" />
         </div>
       )
     }
@@ -133,11 +133,11 @@ export const FeedTray = () => {
   return (
     <>
       {feedTray.map(({ id, media, caption, user, timeDate, likeCount, commentCount, comments }) => (
-        <div key={id} className="w-[500px] mx-auto">
-          <div className="w-full pb-[15px] mb-[15px] border-b-[1px] border-[#838383]">
+        <div key={id} className="mx-auto w-full sm:w-[500px]">
+          <div className="mb-[15px] w-full border-b-[1px] border-[#838383] pb-[15px]">
             {/* header */}
-            <div className="flex justify-between h-[50px] items-center">
-              <div className="flex gap-[8px] items-center">
+            <div className="flex h-[50px] items-center justify-between px-[10px] sm:px-0">
+              <div className="flex items-center gap-[8px]">
                 <Avatar type={avatar_type.feed} src={user.avatar} />
                 <UserName name={user.name} />
                 <TimeAgo time={timeDate} />
