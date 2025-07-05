@@ -62,7 +62,7 @@ export const MenuDesk = () => {
     <>
       <div className="fixed top-0 left-0 z-[99] flex h-[80px] w-full items-center justify-between bg-[#fff] px-[20px] backdrop-blur-[5px] sm:hidden">
         <Logo />
-        <div className="flex gap-[20px]">
+        <div className="flex gap-[30px]">
           <div onClick={selectSection(EMenu.MESSAGER)}>
             {selectedSection === EMenu.MESSAGER ? <MessagerIconSelected /> : <MessagerIcon />}
           </div>

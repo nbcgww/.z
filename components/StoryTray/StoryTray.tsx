@@ -7,7 +7,7 @@ import clsx from 'clsx'
 
 export const StoryTray = () => {
   return (
-    <div className="mx-auto w-[500px] py-[20px]">
+    <div className="mx-auto w-full py-[20px] sm:w-[600px]">
       <Swiper
         spaceBetween={0}
         slidesPerView={5}
