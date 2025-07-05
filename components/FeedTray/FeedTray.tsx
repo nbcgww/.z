@@ -174,7 +174,7 @@ export const FeedTray = () => {
     <>
       {feedTray.map(({ id, media, caption, user, timeDate, likeCount, commentCount, comments }) => (
         <div key={id} className="mx-auto w-full sm:w-[500px]">
-          <div className="mb-[15px] w-full border-b-[1px] border-[#838383] pb-[15px]">
+          <div className="mb-[15px] w-full border-b-[1px] border-[#00000020] pb-[15px]">
             {/* header */}
             <div className="flex h-[50px] items-center justify-between px-[10px] sm:px-0">
               <div className="flex items-center gap-[8px]">

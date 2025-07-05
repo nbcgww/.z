@@ -30,14 +30,14 @@ import { useScroll } from 'react-use'
 const Logo = () => {
   return (
     <>
-      <span
+      <button
         className={clsx(
           lexend.className,
           'pointer-events-none -translate-x-[3px] text-[35px] leading-[40px] select-none',
         )}
       >
         .z
-      </span>
+      </button>
     </>
   )
 }
@@ -60,7 +60,7 @@ export const MenuDesk = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 z-[99] flex h-[80px] w-full items-center justify-between border-b-[1px] border-b-[#b6b6b6ba] bg-[#fff] px-[20px] backdrop-blur-[5px] sm:hidden">
+      <div className="fixed top-0 left-0 z-[99] flex h-[80px] w-full items-center justify-between bg-[#fff] px-[20px] backdrop-blur-[5px] sm:hidden">
         <Logo />
         <div className="flex gap-[20px]">
           <div onClick={selectSection(EMenu.MESSAGER)}>
