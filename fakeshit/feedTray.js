@@ -2,11 +2,11 @@ export const feedTray = [
   {
     id: 2,
     user: {
-      name: '__________________',
+      name: '_',
       avatar:
         'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
     },
-    timeDate: '2024',
+    timeDate: new Date(),
     media: [
       {
         id: 1,
@@ -27,7 +27,7 @@ You've seen all new posts from the past 3 days.`,
     comments: [
       {
         user: {
-          name: 'cz',
+          name: '1',
           avatar:
             'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
         },
@@ -44,14 +44,14 @@ Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "ca
         reply: [
           {
             user: {
-              name: 'cz',
+              name: '🙂',
               avatar:
                 'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
             },
             timeDate: '2024',
             likeCount: 1,
             replyCount: 2,
-            comment: `Alo`,
+            comment: `Q6cZ2QGgI0jdLRVmwh_VoiItYZCE_gHSeAwDAwaoDmixEkxy3QqCohwgREgDjfSFJhZGRu0`,
           },
         ],
       },
@@ -60,11 +60,11 @@ Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "ca
   {
     id: 1,
     user: {
-      name: '____',
+      name: '_',
       avatar:
         'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
     },
-    timeDate: '2024',
+    timeDate: new Date(2025, 6, 5),
     media: [
       {
         id: 1,
@@ -99,7 +99,7 @@ Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "ca
     comments: [
       {
         user: {
-          name: 'cz',
+          name: '_',
           avatar:
             'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
         },
@@ -110,14 +110,14 @@ Dù vậy, WHO phân loại rủi ro toàn cầu chung do COVID-19 ở mức "ca
         reply: [
           {
             user: {
-              name: 'cz',
+              name: '_',
               avatar:
                 'https://instagram.fhan5-8.fna.fbcdn.net/v/t51.2885-19/432266620_2709233765896208_7391032803882825897_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fhan5-8.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QF0wYY8ffCc9nFoqmgoOL3bWQinK2Z4TzIJDgHkVv8ro3440GemItSBr65s7HxJPXc&_nc_ohc=bN0SSq03BA8Q7kNvwE1bo56&_nc_gid=9tN1Kd3iVK8W0S-kjB6wbA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfPkl48rmmnZOpF9H6dg46Ha5xp91PLXq9rwG8XIPuVidQ&oe=68633BF4&_nc_sid=10d13b',
             },
             timeDate: '2024',
             likeCount: 1,
             replyCount: 2,
-            comment: `Alo`,
+            comment: `Q6cZ2QGgI0jdLRVmwh_VoiItYZCE_gHSeAwDAwaoDmixEkxy3QqCohwgREgDjfSFJhZGRu0`,
           },
         ],
       },

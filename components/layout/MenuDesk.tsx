@@ -25,6 +25,8 @@ import MoreIconSelected from '@/svgs/menu-more_selected.svg'
 import { useState } from 'react'
 import { Avatar, avatar_type } from '../Common/Avatar'
 
+import { useScroll } from 'react-use'
+
 const Logo = () => {
   return (
     <>
