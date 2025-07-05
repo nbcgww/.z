@@ -65,7 +65,7 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
   return (
     <div className="w-full px-[10px] sm:px-0">
       {data.map((i, idx) => (
-        <div>
+        <div key={idx}>
           <div className="mb-[10px] flex gap-[8px]">
             <div className="w-[3px] flex-none bg-[#00c3ff]"></div>
             <div>
@@ -84,7 +84,7 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
             </div>
           </div>
           {i.reply.map((j, idxj) => (
-            <div className="pl-[15px]">
+            <div className="pl-[15px]" key={idxj}>
               <div className="w-full">
                 <div className="flex gap-[8px]">
                   <div className="w-[3px] flex-none bg-[#26ff00]"></div>
@@ -159,7 +159,7 @@ export const FeedTray = () => {
                 }}
               >
                 {media.map((i) => (
-                  <SwiperSlide key={id}>{imageOrVideo(i)}</SwiperSlide>
+                  <SwiperSlide key={i.id}>{imageOrVideo(i)}</SwiperSlide>
                 ))}
               </Swiper>
             </div>

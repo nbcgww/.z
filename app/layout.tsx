@@ -5,18 +5,8 @@ import { MenuDesk } from '@/components/layout/MenuDesk'
 import clsx from 'clsx'
 import { quicksand } from '@/utils/font'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
-
 export const metadata: Metadata = {
-  title: '.z',
+  title: '',
   description: '.z',
 }
 export const viewport: Viewport = {
