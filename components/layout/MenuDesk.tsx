@@ -60,7 +60,7 @@ export const MenuDesk = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 z-[99] flex h-[80px] w-full items-center justify-between border-b-[1px] border-b-[#b6b6b6ba] bg-[#ffffff62] px-[20px] backdrop-blur-[5px] md:hidden">
+      <div className="fixed top-0 left-0 z-[99] flex h-[80px] w-full items-center justify-between border-b-[1px] border-b-[#b6b6b6ba] bg-[#fff] px-[20px] backdrop-blur-[5px] md:hidden">
         <Logo />
         <div className="flex gap-[20px]">
           <div onClick={selectSection(EMenu.MESSAGER)}>
@@ -73,14 +73,14 @@ export const MenuDesk = () => {
       </div>
       <div
         className={clsx(
-          '!fixed bottom-0 left-0 z-[99] flex h-[80px] w-full items-center border-t-[1px] border-t-[#7b7b7b26] bg-[#ffffff4f] backdrop-blur-[5px] sm:top-0 sm:h-screen sm:w-[80px] sm:flex-col sm:justify-between sm:border-t-0 sm:border-r-[1px] sm:border-r-[#7b7b7b26]',
+          '!fixed bottom-0 left-0 z-[99] flex h-[80px] w-full items-center border-t-[1px] border-t-[#7b7b7b26] bg-[#fff] backdrop-blur-[5px] sm:top-0 sm:h-screen sm:w-[80px] sm:flex-col sm:justify-between sm:border-t-0 sm:border-r-[1px] sm:border-r-[#7b7b7b26]',
         )}
       >
         <div className="hidden sm:block">
           <Logo />
         </div>
 
-        <div className="flex w-full -translate-y-[12px] justify-between gap-[50px] px-[20px] sm:w-auto sm:translate-y-0 sm:flex-col [&>div]:cursor-pointer">
+        <div className="flex w-full -translate-y-[14px] justify-between gap-[50px] px-[20px] sm:w-auto sm:translate-y-0 sm:flex-col [&>div]:cursor-pointer">
           <div onClick={selectSection(EMenu.HOME)}>
             {selectedSection === EMenu.HOME ? <HomeIconSelected /> : <HomeIcon />}
           </div>
