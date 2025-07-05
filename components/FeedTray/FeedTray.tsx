@@ -127,7 +127,7 @@ export const FeedTray = () => {
       )
     }
     if (type === 'video') {
-      return <Video src={src} onLoadedData={handleReRenderSwiper} theme={Instaplay} />
+      return <Video src={src} onLoadedData={handleReRenderSwiper} playsInline />
     }
   }
   return (
