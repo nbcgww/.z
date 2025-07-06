@@ -1,12 +1,11 @@
-<svg aria-label="Home" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24" role="img"
-    viewBox="0 0 24 24" width="24">
-    <title>Home</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+    class="injected-svg" data-src="https://cdn.hugeicons.com/icons/layer-add-stroke-rounded.svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
     <path
-        d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z"
-        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-        stroke-width="2"></path>
-    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-        stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line>
-    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-        stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line>
+        d="M9 15C9 12.1716 9 10.7574 9.87868 9.87868C10.7574 9 12.1716 9 15 9L16 9C18.8284 9 20.2426 9 21.1213 9.87868C22 10.7574 22 12.1716 22 15V16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22H15C12.1716 22 10.7574 22 9.87868 21.1213C9 20.2426 9 18.8284 9 16L9 15Z"
+        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path
+        d="M16.9999 9C16.9975 6.04291 16.9528 4.51121 16.092 3.46243C15.9258 3.25989 15.7401 3.07418 15.5376 2.90796C14.4312 2 12.7875 2 9.5 2C6.21252 2 4.56878 2 3.46243 2.90796C3.25989 3.07417 3.07418 3.25989 2.90796 3.46243C2 4.56878 2 6.21252 2 9.5C2 12.7875 2 14.4312 2.90796 15.5376C3.07417 15.7401 3.25989 15.9258 3.46243 16.092C4.51121 16.9528 6.04291 16.9975 9 16.9999"
+        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M18 15.5L13 15.5M15.5 13V18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
 </svg>

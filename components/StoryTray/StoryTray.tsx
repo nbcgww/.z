@@ -10,7 +10,7 @@ export const StoryTray = () => {
     <div className="mx-auto w-full py-[20px] sm:w-[600px]">
       <Swiper
         spaceBetween={0}
-        slidesPerView={5}
+        slidesPerView={4.5}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >

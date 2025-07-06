@@ -9,6 +9,7 @@ import SearchIcon from '@/svgs/menu-search.svg'
 import SearchIconSelected from '@/svgs/menu-search_selected.svg'
 
 import PostIcon from '@/svgs/menu-post.svg'
+import PostIconSelected from '@/svgs/menu-post_selected.svg'
 
 import ReelsIcon from '@/svgs/menu-reels.svg'
 import ReelsIconSelected from '@/svgs/menu-reels_selected.svg'
@@ -46,6 +47,7 @@ export const MenuDesk = () => {
   enum EMenu {
     HOME,
     SEARCH,
+    ADD,
     REEL,
     MESSAGER,
     NOTIFICATION,
@@ -87,8 +89,8 @@ export const MenuDesk = () => {
           <div onClick={selectSection(EMenu.SEARCH)}>
             {selectedSection === EMenu.SEARCH ? <SearchIconSelected /> : <SearchIcon />}
           </div>
-          <div onClick={selectSection(EMenu.SEARCH)}>
-            {selectedSection === EMenu.SEARCH ? <PostIcon /> : <PostIcon />}
+          <div onClick={selectSection(EMenu.ADD)}>
+            {selectedSection === EMenu.ADD ? <PostIconSelected /> : <PostIcon />}
           </div>
           <div onClick={selectSection(EMenu.REEL)}>
             {selectedSection === EMenu.REEL ? <ReelsIconSelected /> : <ReelsIcon />}

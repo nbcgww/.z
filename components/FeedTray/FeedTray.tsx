@@ -99,14 +99,14 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
               </div>
               <div className="flex gap-[20px]">
                 <div className="flex gap-[8px]">
-                  <button className="[&>svg]:h-[18px] [&>svg]:w-[18px]" title="like">
+                  <button className="[&__path]:scale-[0.7] [&>svg]:h-[18px] [&>svg]:w-[18px]" title="like">
                     <StarIcon />
                   </button>
                   <p>{formatNumberCompact(113987127389)}</p>
                 </div>
 
                 <div className="flex gap-[8px]">
-                  <button className="[&>svg]:h-[18px] [&>svg]:w-[18px]" title="reply">
+                  <button className="[&>svg]:h-[18px]" title="reply">
                     <ReplyIcon />
                   </button>
                   <p>{formatNumberCompact(19031924)}</p>
@@ -130,7 +130,7 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
                     </div>
                     <div className="flex gap-[20px]">
                       <div className="flex gap-[8px]">
-                        <button className="[&>svg]:h-[18px] [&>svg]:w-[18px]" title="like">
+                        <button className="[&__path]:scale-[0.7] [&>svg]:h-[18px] [&>svg]:w-[18px]" title="like">
                           <StarIcon />
                         </button>
                         <p>{formatNumberCompact(113987127389)}</p>
