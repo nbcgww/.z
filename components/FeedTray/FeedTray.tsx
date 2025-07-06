@@ -86,7 +86,7 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
     <div className="w-full px-[10px] sm:px-0">
       {data.map((i, idx) => (
         <div key={idx}>
-          <div className="mb-[10px] flex gap-[8px]">
+          <div className="mb-[10px] flex gap-[12px]">
             <div className="w-[3px] flex-none bg-[#00c3ff]"></div>
             <div>
               <div className="flex items-center gap-[10px]">
@@ -117,7 +117,7 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
           {i.reply.map((j, idxj) => (
             <div className="mb-[10px] pl-[15px]" key={idxj}>
               <div className="w-full">
-                <div className="flex gap-[8px]">
+                <div className="flex gap-[12px]">
                   <div className="w-[3px] flex-none bg-[#26ff00]"></div>
                   <div>
                     <div className="flex items-center gap-[10px]">
