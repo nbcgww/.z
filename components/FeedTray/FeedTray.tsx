@@ -38,21 +38,21 @@ export const ReactArea = ({ likeCount, commentCount }: ReactAreaProps) => {
             <button className="[&>svg]:h-[24px] [&>svg]:w-[24px]">
               <StarIcon />
             </button>
-            <p>{formatNumberCompact(likeCount)}</p>
+            <p className="text-[13px]">{formatNumberCompact(likeCount)}</p>
           </div>
 
           <div className="flex items-end gap-[8px]">
             <button>
               <PostComment />
             </button>
-            <p>{formatNumberCompact(commentCount)}</p>
+            <p className="text-[13px]">{formatNumberCompact(commentCount)}</p>
           </div>
 
           <div className="flex items-end gap-[8px]">
             <button>
               <PostSend />
             </button>
-            <p>{formatNumberCompact(247132)}</p>
+            <p className="text-[13px]">{formatNumberCompact(247132)}</p>
           </div>
         </div>
         <div>
@@ -73,7 +73,7 @@ interface ContentPostProps {
 export const ContentPost = ({ userName, content }: ContentPostProps) => {
   return (
     <div className="px-[10px] pb-[5px] sm:px-0">
-      <span className="text-[14px] font-[500]">{content}</span>
+      <span className="text-[14px]">{content}</span>
     </div>
   )
 }
@@ -87,12 +87,14 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
       {data.map((i, idx) => (
         <div key={idx}>
           <div className="mb-[10px] flex gap-[12px]">
-            <div className="w-[3px] flex-none bg-[#00c3ff]"></div>
+            <div className="w-[3px] flex-none bg-[#00000052]"></div>
             <div>
               <div className="flex items-center gap-[10px]">
                 <Avatar type={avatar_type.feed} src={i.user.avatar} />
                 <UserName name={i.user.name} />
-                <TimeAgo time={i.timeDate} />
+                <div className="translate-y-[6px]">
+                  <TimeAgo time={i.timeDate} />
+                </div>
               </div>
               <div>
                 <p className="line-clamp-5 text-[14px]">{i.comment}</p>
@@ -102,14 +104,14 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
                   <button className="[&__path]:scale-[0.7] [&>svg]:h-[18px] [&>svg]:w-[18px]" title="like">
                     <StarIcon />
                   </button>
-                  <p>{formatNumberCompact(113987127389)}</p>
+                  <p className="text-[13px]">{formatNumberCompact(113987127389)}</p>
                 </div>
 
                 <div className="flex gap-[8px]">
                   <button className="[&>svg]:h-[18px]" title="reply">
                     <ReplyIcon />
                   </button>
-                  <p>{formatNumberCompact(19031924)}</p>
+                  <p className="text-[13px]">{formatNumberCompact(19031924)}</p>
                 </div>
               </div>
             </div>
@@ -118,12 +120,14 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
             <div className="mb-[10px] pl-[15px]" key={idxj}>
               <div className="w-full">
                 <div className="flex gap-[12px]">
-                  <div className="w-[3px] flex-none bg-[#26ff00]"></div>
+                  <div className="w-[3px] flex-none bg-[#00000058]"></div>
                   <div>
                     <div className="flex items-center gap-[10px]">
                       <Avatar type={avatar_type.feed} src={j.user.avatar} />
                       <UserName name={j.user.name} />
-                      <TimeAgo time={j.timeDate} />
+                      <div className="translate-y-[6px]">
+                        <TimeAgo time={j.timeDate} />
+                      </div>
                     </div>
                     <div>
                       <p className="text-[14px]">{j.comment}</p>
@@ -133,14 +137,14 @@ export const CommentArea = ({ data }: CommentAreaProps) => {
                         <button className="[&__path]:scale-[0.7] [&>svg]:h-[18px] [&>svg]:w-[18px]" title="like">
                           <StarIcon />
                         </button>
-                        <p>{formatNumberCompact(113987127389)}</p>
+                        <p className="text-[13px]">{formatNumberCompact(113987127389)}</p>
                       </div>
 
                       <div className="flex gap-[8px]">
                         <button className="[&>svg]:h-[18px] [&>svg]:w-[18px]" title="reply">
                           <ReplyIcon />
                         </button>
-                        <p>{formatNumberCompact(19031924)}</p>
+                        <p className="text-[13px]">{formatNumberCompact(19031924)}</p>
                       </div>
                     </div>
                   </div>
@@ -180,7 +184,9 @@ export const FeedTray = () => {
               <div className="flex items-center gap-[8px]">
                 <Avatar type={avatar_type.feed} src={user.avatar} />
                 <UserName name={user.name} />
-                <TimeAgo time={timeDate} />
+                <div className="translate-y-[6px]">
+                  <TimeAgo time={timeDate} />
+                </div>
               </div>
               <button className="">
                 <PostOption />

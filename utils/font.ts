@@ -1,4 +1,4 @@
-import { Lexend, Mulish, Quicksand } from 'next/font/google'
+import { Lexend, Mulish, Quicksand, Wix_Madefor_Display } from 'next/font/google'
 
 export const lexend = Lexend({
   weight: ['500'],
@@ -9,6 +9,6 @@ export const raleway = Mulish({
   subsets: ['latin'],
 })
 
-export const quicksand = Quicksand({
+export const quicksand = Wix_Madefor_Display({
   subsets: ['latin'],
 })

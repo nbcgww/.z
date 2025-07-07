@@ -4,6 +4,7 @@ import Image from 'next/image'
 import 'swiper/css'
 import { storyTray } from '@/fakeshit/storyTray'
 import clsx from 'clsx'
+import { UserName } from '../Common/Name'
 
 export const StoryTray = () => {
   return (
@@ -19,7 +20,7 @@ export const StoryTray = () => {
             <div className="flex cursor-pointer flex-col items-center">
               <div
                 className={clsx(
-                  'h-[80px] w-[80px] rounded-[50%] p-[3px]',
+                  'mb-[8px] h-[80px] w-[80px] rounded-[50%] p-[3px]',
                   story.seen ? 'bg-[#8888887b]' : 'bg-gradient-to-bl from-[#cb35fd] to-[#905bf1]',
                 )}
               >
@@ -29,7 +30,7 @@ export const StoryTray = () => {
                   </div>
                 </div>
               </div>
-              <span className="mt-[5px] text-[14px]">{story.user}</span>
+              <UserName name={story.user} />
             </div>
           </SwiperSlide>
         ))}

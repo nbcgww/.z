@@ -5,5 +5,5 @@ interface Props {
 }
 
 export const TimeAgo = ({ time = new Date(2014, 6, 2) }: Props) => {
-  return <div className="text-[13px] font-[500] text-[#5c5c5c]">{formatDistanceToNow(time)}</div>
+  return <div className="text-[13px] text-[#5c5c5c]">{formatDistanceToNow(time)}</div>
 }
