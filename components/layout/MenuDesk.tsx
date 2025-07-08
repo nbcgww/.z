@@ -93,7 +93,7 @@ export const MenuDesk = () => {
           )}
         </div>
       </div>
-      <div className="fixed bottom-0 z-[99] flex w-full [padding-bottom:env(safe-area-inset-bottom)] sm:left-0 sm:h-screen sm:w-auto">
+      <div className="fixed bottom-0 z-[99] flex w-full sm:left-0 sm:h-screen sm:w-auto">
         <div
           className={clsx(
             'flex h-[80px] w-full items-center border-t-[1px] border-t-[#7b7b7b26] bg-[#fff] sm:h-screen sm:w-[80px] sm:flex-col sm:justify-between sm:border-t-0 sm:border-r-[1px] sm:border-r-[#7b7b7b26]',
